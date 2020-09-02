@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the Recipe</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    
+</head>
+<body>
+<h1>Get the Recipe</h1>
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+      <a href="#home">Home</a>
+      <a href="#news">About</a>
+      <a href="#contact">Recipes</a>
+      <a href="#about">Contact</a>
+    </div>
+  </div>
+</div>
+ <!-- Spoonacular API-->
+    <input id="search"><button onclick="getrecipe(document.getElementById('search').value)">Search recipes</button>
+    <div id="Output"></div>
+    <a href="" id="sourceLink"></a>
+    <script>
+    function getsource(id){
+        $ajax({
+            url:"https://api.spoonacular.com/recipes/"+id+"/information?apiKey=e339363ba04642b2af191cfa575313ae",
+            success:function(res){
+                document.getElementById("sourceLink").innerHTML=res.sourceUrl
+                document.getElementById("sourceLink").href=res.sourceUrl
+            }
+        });
+    }
+    function getrecipe(q){
+        $ajax({
+            url:"https://api.spoonacular.com/recipes/search?apiKey=e339363ba04642b2af191cfa575313ae&number=1&query="+q,
+            success: function(res){
+                document.getElementById("output").innerHTML="<h1>"+res.results[0].title+"</h1><br><img src='"+res.baseUri+res.results[0].image+"'width='400'/><br>ready in "+res.results[0].readyInMinutes+" minutes"
+                getsource(res.results[0].id)
+            }
+        })
+    }
+    </script>
+    <div class="about">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus asperiores temporibus mollitia delectus distinctio illo quae aliquid libero animi earum atque perferendis vel dolores qui, ducimus culpa incidunt, nostrum assumenda.</p>
+    <p>Inventore, iusto. Blanditiis obcaecati numquam ad in ipsa eaque reprehenderit ut suscipit veniam, modi vero fugit? Dignissimos deserunt error sit a et magni doloribus voluptas veritatis quo. Voluptas, tempore nihil.</p>
+    <p>Optio iste magni in dolore mollitia voluptatum nulla perferendis eos a aliquam harum neque voluptates voluptatibus molestias est ullam voluptatem quasi beatae laboriosam, earum explicabo at! Debitis deserunt aliquid inventore!</p>
+    <p>Nemo commodi, molestiae ad laudantium labore consequatur tenetur quasi laborum tempore optio velit perspiciatis beatae odit necessitatibus voluptatem blanditiis accusamus, dolorem facilis ducimus, incidunt nostrum repudiandae. Repudiandae, nemo? Quod, veritatis.</p>
+    </div>
+
+    <h2>Latest Recipes</h2>
+    <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="assets/images/pancakes.jpeg" alt="pancakes">
+      <div class="caption">
+        <h3>Fluffy American Pancakes</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa laudantium molestias totam architecto facere minima, impedit autem consequatur numquam vel cum excepturi saepe voluptates eaque sunt perferendis laborum voluptatum?</p>
+        <p id="recipe-1">Ingredients</p>
+        <ul>
+        <li>250g oats</li>
+        <li>2 bananas</li>
+        <li>400ml milk</li>
+        <li>Handful dark chocolate chips</li>
+        <li>1tbsp oil</li>
+        </ul>
+        <p>Method</p>
+        <ol>
+        <li>Put the oats in a blender and blitz into a flour.</li>
+        <li>Add the bananas and milk and blend until smooth. </li>
+        <li>Stir in the chocolate chips.</li>
+        <li>Heat the oil in a non-stick frying pan and cook for 1 minute, lowering the heat if necessary</li>
+        <li>Once the edges begin to lift and the base is cooked, flip and cook for a further 30 seconds.</li>
+        <li>Repeat until all the batter is used up. </li>   
+        </ol>
+        <button id="button-card-1" role="button">Read more</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="assets/images/berry-crumble.jpeg" alt="berry-crumble">
+      <div class="caption">
+        <h3>Berry Crumble</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa laudantium molestias totam architecto facere minima, impedit autem consequatur numquam vel cum excepturi saepe voluptates eaque sunt perferendis laborum voluptatum?</p>
+        <p id="recipe-2">Ingredients</p>
+        <ul>
+        <li>250ml almond milk</li>
+        <li>120ml maple syrup</li>
+        <li>1 tsp vanilla</li>
+        <li>1 tsp cinnamon</li>
+        <li>50g  vegan butter, melted</li>
+        <li>1 tsp baking powder</li>
+        <li>180g quick oats</li>
+        <li>110g fresh or frozen wild blueberries</li>
+        <li>110g freshly diced strawberries</li>
+        </ul>
+        <p>Vegan Icing</p>
+        <ul>
+        <li>50g powdered sugar add more for a thicker frosting</li>
+        <li>1 tsp softened vegan butter</li>
+        <li>1 tsp vanilla</li>
+        <li>1 tbsp almond milk add more for a thinner glaze</li>
+        </ul>
+        <p>Method</p>
+        <ol>
+        <li>Preheat Oven to 350</li>
+        <li>Mix together the almond milk, maple syrup, baking powder, vanilla, and butter.</li>
+        <li>Add the oats and mix. Then, fold in the berries. </li>
+        <li>Pour the batter into a 9x11 casserole dish and bake for 45 minutes. </li>
+        <li>While baking, whisk together icing ingredients</li>
+        <li>Drizzle with icing</li>
+        </ol>
+        <button id="button-card-2" role="button">Read more</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="assets/images/stuffed-mushroom.jpg" alt="stuffed-mushroom">
+      <div class="caption">
+        <h3>Stuffed Portobello Mushrooms</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa laudantium molestias totam architecto facere minima, impedit autem consequatur numquam vel cum excepturi saepe voluptates eaque sunt perferendis laborum voluptatum?</p>
+        <p id="recipe-3">Ingredients</p>
+        <p>For the vegan stuffed mushrooms</p>
+        <ul>
+        <li>14 medium to large white mushrooms (mine measured 5 – 6 cm / 2 – 2.5 inches)</li>
+        <li>1 tablespoon olive oil plus more for brushing the mushrooms</li>
+        <li>3 shallots, finely diced</li>
+        <li>5 – 6 cloves of garlic, thinly sliced</li>
+        <li>3 tablespoons chopped walnuts</li>
+        <li>3 tablespoons chopped sun-dried tomatoes</li>
+        <li>3 tablespoons chopped parsley</li>
+        <li>1/2 teaspoon salt plus more for sprinkling the mushroom caps</li>
+        <li>Pepper, to taste</li>
+        </ul>
+        <p>For the parsley-lemon dressing</p>
+        <ul>
+        <li>1/4 cup finely chopped parsley</li>
+        <li>1 clove of garlic, diced</li>
+        <li>The zest of half a lemon</li>
+        <li>1/2 tablespoon red or white wine vinegar</li>
+        <li>1/4 cup olive oil</li>
+        <li>Pinch of salt and pepper, to taste</li>
+        </ul>
+        <p>Method</p>
+        <ol>
+        <li>Start with the dressing to give the flavours time to develop. Combine all ingredients in a small bowl and taste. Adjust the level of acidity, saltiness and lemon to your liking. Set aside.</li>
+        <li>Preheat the oven to 175°C (350°F).</li>
+        <li>Remove the stems from the mushrooms and dice them finely. Brush the mushroom caps on both sides with olive oil, sprinkle the insides with a bit of salt and pepper and place them bottom up in a baking dish.</li>
+        <li>Heat a medium-sized pan over medium heat and add the 1 tablespoon of oil and diced shallots. Fry until transparent then add the sliced garlic. Fry until soft and fragrant then add the chopped mushroom stems. Fry until browned, stirring occasionally, then remove the pan from the heat. Stir through the remaining stuffing ingredients.</li>
+        <li>Fill each mushroom cap with the stuffing and bake for 15 – 20 minutes or until the mushrooms are brown and soft. If the tomatoes or parsley begin to burn, cover the pan loosely with tin foil.</li>
+        <li>Serve with the dressing on the side to drizzle over the mushrooms.</li>
+        </ol>
+        <button id="button-card-3" role="button">Read more</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer>
+      <ul class="social-media">
+        <li class="contact-us">contact us on..</li>
+        <li class="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="instagram"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+        <li class="twitter"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="mail"><a href="contact.html" target="_blank"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    
+    </footer>  
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"
+        defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
+        defer></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
+        defer></script>
+
+    
+</body>
+</html>

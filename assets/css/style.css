@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet');
+#doc 
+{
+    background-color: #eafafd;
+}
+/* Navbar */
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+background: #eafafd;}
+
+.bg-img {
+  /* The image used */
+  background-image: url("../images/cake.png");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+h1 {
+    color: grey;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background-color: #eafafd;
+    font-size: 6rem;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #eafafd;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #a2c4c9;
+  color: #fafafa;
+}
+
+/* About Text */
+.about {
+    padding: 10%;
+}
+/* Button */
+button {
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    background-color: rgba(51, 148, 172, 0.85);
+    text-align: center;
+    padding: 1em .75em;
+    text-decoration: none;
+	font-size: 1em
+}
+
+/* Social Media */
+footer {
+    height: 10rem;
+    background: #eafafd;
+}
+.contact-us {
+    font-family: 'Dancing Script', cursive;
+}
+.social-media li {
+    text-align: center;
+    display: inline;
+}
+.social-media i {
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-left: 6%;
+    margin-right: auto;
+    color:#d5a6bd
+}
+i .facebook {
+    color: #a2c4c9;
+}
+i .instagram {
+    color: #b6d7a8;
+}
+i .twitter {
+    color: #b4a7d6;
+}
+i .mail {
+    color: #d5a6bd;
+}
+ /* Media Queries */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
