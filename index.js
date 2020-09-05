@@ -1,9 +1,0 @@
-$("#button-card-1").click(function(){
-  $("#recipe-1").show(2000)
-});
-$("#button-card-2").click(function(){
-  $("#recipe-2").show(2000)
-});
-$("#button-card-3").click(function(){
-  $("#recipe-3").show(2000)
-})

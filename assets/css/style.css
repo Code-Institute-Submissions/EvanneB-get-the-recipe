@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet');
-#doc 
+*
 {
     background-color: #eafafd;
+
 }
+
 /* Navbar */
 
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -15,7 +17,7 @@ background: #eafafd;}
 
   min-height: 380px;
 
-  /* Center and scale the image nicely */
+  /* Center and scale the image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;  
@@ -50,8 +52,9 @@ h1 {
   color: grey;
   text-align: center;
   padding: 14px 16px;
+  font-family: 'Dancing Script', cursive;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 3rem;
 }
 
 .topnav a:hover {
@@ -83,6 +86,7 @@ footer {
 }
 .contact-us {
     font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
 }
 .social-media li {
     text-align: center;
@@ -107,6 +111,25 @@ i .twitter {
 i .mail {
     color: #d5a6bd;
 }
+
+/*Recipes*/
+.recipes-intro {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 300;
+    font-size: 3rem;
+    padding: 10%;
+}
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  font-size: 4rem; 
+  padding-left: 10%; 
+}
+h3 {
+    font-style: bold;
+    font-size: 3rem;
+}
+
  /* Media Queries */
 @media screen and (max-width: 500px) {
   .header a {
@@ -119,14 +142,14 @@ i .mail {
     float: none;
   }
 }
-// Small devices (landscape phones, 576px and up)
+/* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { ... }
 
-// Medium devices (tablets, 768px and up)
+/* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { ... }
 
-// Large devices (desktops, 992px and up)
+/* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { ... }
 
-// Extra large devices (large desktops, 1200px and up)
+/* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { ... }
