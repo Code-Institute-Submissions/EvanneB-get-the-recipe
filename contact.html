@@ -12,7 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    
+  
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_J7jAC9vihCv9zzEmMrBbK");
+   })();
+</script>  
 </head>
 <body>
 <h1>Get the Recipe</h1>
@@ -26,6 +34,21 @@
     </div>
   </div>
 </div>
+ <section class="container-fluid">
+        <div class="row bg-color-contact">
+            <div>
+                <h3 class="contact-heading uppercase text-center">Questions & Comments</h3>
+            </div>
+            <div class="center-form">
+            <form onsubmit="return sendMail(this);">    
+                <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                <textarea rows="5" name="projectsummary" class="form-control" id="questions" placeholder="Enter your questions here" required></textarea>
+                <button type="submit" class="btn btn-secondary center-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
 <footer>
       <ul class="social-media">
         <li class="contact-us">contact us on..</li>
@@ -35,7 +58,8 @@
         <li class="mail"><a href="contact.html" target="_blank"><i class="fas fa-envelope"></i></a></li>
         </ul>
     
-    </footer>  
+    </footer>
+    <script src="assets/js/sendEmail.js"></script>  
 <script type="text/javascript" src="js/index.js"></script> 
 <script src="https://code.jquery.com/jquery-3.5.1.js" 
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
