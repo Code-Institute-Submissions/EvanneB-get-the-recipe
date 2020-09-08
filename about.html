@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get the Recipe</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    
+</head>
+<body>
+<h1>Get the Recipe</h1>
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="recipe.html">Recipes</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+ <!-- Spoonacular API-->
+    <input id="search"><button onclick="getrecipe(document.getElementById('search').value)">Search recipes</button>
+    <div id="Output"></div>
+    <a href="" id="sourceLink"></a>
+    <script>
+    function getsource(id){
+        $ajax({
+            url:"https://api.spoonacular.com/recipes/"+id+"/information?apiKey=e339363ba04642b2af191cfa575313ae",
+            success:function(res){
+                document.getElementById("sourceLink").innerHTML=res.sourceUrl
+                document.getElementById("sourceLink").href=res.sourceUrl
+            }
+        });
+    }
+    function getrecipe(q){
+        $ajax({
+            url:"https://api.spoonacular.com/recipes/search?apiKey=e339363ba04642b2af191cfa575313ae&number=1&query="+q,
+            success: function(res){
+                document.getElementById("output").innerHTML="<h1>"+res.results[0].title+"</h1><br><img src='"+res.baseUri+res.results[0].image+"'width='400'/><br>ready in "+res.results[0].readyInMinutes+" minutes"
+                getsource(res.results[0].id)
+            }
+        })
+    }
+
+    <section>
+
+    </section>
+
+    <footer>
+      <ul class="social-media">
+        <li class="contact-us">contact us on..</li>
+        <li class="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="instagram"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+        <li class="twitter"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        <li class="mail"><a href="contact.html" target="_blank"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </footer>
+    
+    <script type="text/javascript" src="assets/js/index.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
+        defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
+        defer></script>  
+        
+</body>
+</html>

@@ -12,11 +12,11 @@ requestString = requestString + ingredientsString;
 
 unirest.get(requestString)
 .header("X-RapidAPI-KEY", API_KEY)
-.end/function(result {
+.end/function(result) {
     if (result.status === 200){
 getRecipeData(result.body);
     };
-});
+};
 
 
 function getData(cb) {
