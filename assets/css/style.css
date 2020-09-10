@@ -76,7 +76,8 @@ button {
     text-align: center;
     padding: 1em .75em;
     text-decoration: none;
-	font-size: 1em
+	font-size: 1em;
+    
 }
 
 /* Social Media */
@@ -131,10 +132,9 @@ h3 {
     font-size: 3rem;
 }
 /*Testimonials*/
-.box img {
-    width: 100%;
-    height: 10rem;
-    margin-bottom: 1rem;
+.thumbnail {
+    background-color: #eafafd;
+    padding-bottom: 0;
 }
 /*Map API*/
 #map {
@@ -157,7 +157,12 @@ h3 {
 @media (min-width: 576px) { ... }
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) { 
+.bg-img {
+min-height: 500px;
+
+ }
+}
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { ... }
