@@ -13,13 +13,15 @@ background: #eafafd;}
 
 .bg-img {
   background-image: url("../images/cake.png");
-  min-height: 380px;
 
+  min-height: 380px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;  
+  background-attachment: fixed;
   
   position: relative;
+
 }
 h1 {
     color: grey;
@@ -34,6 +36,7 @@ h1 {
   position: absolute;
   margin: 20px;
   width: auto;
+  background-color: #eafafd;
 }
 
 /* The navbar */
@@ -130,7 +133,7 @@ h3 {
 /*Testimonials*/
 .box img {
     width: 100%;
-    height: 12.5rem;
+    height: 10rem;
     margin-bottom: 1rem;
 }
 /*Map API*/
@@ -160,4 +163,6 @@ h3 {
 @media (min-width: 992px) { ... }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+
+}

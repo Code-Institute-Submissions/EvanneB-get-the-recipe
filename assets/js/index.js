@@ -4,7 +4,7 @@ const API_KEY = 'e339363ba04642b2af191cfa575313ae';
 
 const INGREDIENT_LIST =['banana','apple', 'pear']
 
-let requestString = "https://spoonscular-recipe-food-nutrition-vl.p.rapidapi.com/recipes/find" + "ByIngredients?number=5&ranking=1&ingredients=";
+let requestString = "https://api.spoonacular.com/recipes/findByIngredients?ingredients=dkdkdkdkdks";
 
 const ingredientsString = INGREDIENT_LIST.map(ingredient => ingredient + '%2C');
 
@@ -40,4 +40,12 @@ getData(printDataToConsole);
 $("#button-card").click(function()
 {
  $("#recipe").slideToggle()
+});
+
+$(document).ready(function(){
+
+$("#button-card").click(function()
+{
+  $("#recipe").toggle("slow");
+});
 });
