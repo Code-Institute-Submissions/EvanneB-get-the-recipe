@@ -22,6 +22,19 @@ background: #eafafd;}
   
   position: relative;
 
+  animation-name: img-zoom;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+
+
+}
+@keyframes img-zoom {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.1)
+    }
 }
 h1 {
     color: grey;
@@ -42,7 +55,6 @@ h1 {
 /* The navbar */
 .topnav {
   overflow: hidden;
-  background-color: #eafafd;
 }
 
 /* Navbar links */
@@ -159,8 +171,12 @@ h3 {
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
 .bg-img {
-min-height: 500px;
+    min-height: 650px;
+    background-position: center;
 
+ }
+ .topnav a {
+     font-size: 3.5rem;
  }
 }
 
