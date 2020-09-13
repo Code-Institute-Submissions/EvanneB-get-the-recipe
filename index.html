@@ -4,68 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get the Recipe</title>
-
-    <!--CSS-->
+    
     <script type="text/javascript" src="assets/js/index.js"></script> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script src="assets/js/index.js"></script> 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" 
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-        crossorigin="anonymous"></script>
-        <script src=“http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js”></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
-        defer></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
-        defer></script>  
-        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByFSvsdFxPwC6Tq_H6tRXJS5hoeTu6uyA&callback=initMap"
-    type="text/javascript"></script>
-    <script src="assets/js/maps.js"></script>
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" /> 
 </head>
 <body>
-<h1>Get the Recipe</h1>
-<div class="bg-img">
-  <div class="container">
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="recipe.html">Recipes</a>
-      <a href="contact.html">Contact</a>
+    <h1>Get the Recipe</h1>
+    <div class="bg-img">
+    <div class="container">
+        <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="recipe.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+        </div>
     </div>
-  </div>
-</div>
- <!-- Spoonacular API-->
-    <input id="search"><button onclick="getrecipe(document.getElementById('search').value)">Search recipes</button>
-    <div id="Output"></div>
-    <a href="" id="sourceLink"></a>
-    <script>
-    function getsource(id){
-        $ajax({
-            url:"https://api.spoonacular.com/recipes/"+id+"/information?apiKey=e339363ba04642b2af191cfa575313ae",
-            success:function(res){
-                document.getElementById("sourceLink").innerHTML=res.sourceUrl
-                document.getElementById("sourceLink").href=res.sourceUrl
-            }
-        });
-    }
-    function getrecipe(q){
-        $ajax({
-            url:"https://api.spoonacular.com/recipes/search?apiKey=e339363ba04642b2af191cfa575313ae&number=1&query="+q,
-            success: function(res){
-                document.getElementById("output").innerHTML="<h1>"+res.results[0].title+"</h1><br><img src='"+res.baseUri+res.results[0].image+"'width='400'/><br>ready in "+res.results[0].readyInMinutes+" minutes"
-                getsource(res.results[0].id)
-            }
-        })
-    }
-    </script>
+    </div>
+
+ <main>
+    <!-- Start Search bar -->
+    <section id="search-bar">
+        <div class="container main-container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h1 class="main-container__heading"> Get theRecipe</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <form id="recipe-form">
+                        <div class="search-bar-wrapper">
+                            <i class="fas fa-search" id="recipe-form__search-icon"></i>
+                            <input type="text" name="search-bar" id="recipe-form__search-bar"
+                                   placeholder="Find a recipe">
+                            <i class="fas fa-times-circle" id="recipe-form__clear-icon"></i>
+                        </div>
+                        <div class="row recipe-form-checkbox">
+                            <div class="col-12 recipe-form-checkbox__search-wrapper">
+                                <button type="button" id="search" class="recipe-form-checkbox__search-button">Search
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="recipe-cards">
+        <div class="container recipe-cards">
+            <div class="row justify-content-between" id="content">
+​
+            </div>
+        </div>
+    </section>
+    <!-- End main search bar -->
+    <!-- Start inspiration -->
+</main>
     <div class="about">
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus asperiores temporibus mollitia delectus distinctio illo quae aliquid libero animi earum atque perferendis vel dolores qui, ducimus culpa incidunt, nostrum assumenda.</p>
     <p>Inventore, iusto. Blanditiis obcaecati numquam ad in ipsa eaque reprehenderit ut suscipit veniam, modi vero fugit? Dignissimos deserunt error sit a et magni doloribus voluptas veritatis quo. Voluptas, tempore nihil.</p>
@@ -112,33 +113,33 @@
         <h3>Berry Crumble</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa laudantium molestias totam architecto facere minima, impedit autem consequatur numquam vel cum excepturi saepe voluptates eaque sunt perferendis laborum voluptatum?</p>
         <p id="recipe">Ingredients</p>
-        <ul>
-        <li>250ml almond milk</li>
-        <li>120ml maple syrup</li>
-        <li>1 tsp vanilla</li>
-        <li>1 tsp cinnamon</li>
-        <li>50g  vegan butter, melted</li>
-        <li>1 tsp baking powder</li>
-        <li>180g quick oats</li>
-        <li>110g fresh or frozen wild blueberries</li>
-        <li>110g freshly diced strawberries</li>
-        </ul>
-        <p>Vegan Icing</p>
-        <ul>
-        <li>50g powdered sugar add more for a thicker frosting</li>
-        <li>1 tsp softened vegan butter</li>
-        <li>1 tsp vanilla</li>
-        <li>1 tbsp almond milk add more for a thinner glaze</li>
-        </ul>
-        <p>Method</p>
-        <ol>
-        <li>Preheat Oven to 350</li>
-        <li>Mix together the almond milk, maple syrup, baking powder, vanilla, and butter.</li>
-        <li>Add the oats and mix. Then, fold in the berries. </li>
-        <li>Pour the batter into a 9x11 casserole dish and bake for 45 minutes. </li>
-        <li>While baking, whisk together icing ingredients</li>
-        <li>Drizzle with icing</li>
-        </ol>
+            <ul>
+                <li>250ml almond milk</li>
+                <li>120ml maple syrup</li>
+                <li>1 tsp vanilla</li>
+                <li>1 tsp cinnamon</li>
+                <li>50g  vegan butter, melted</li>
+                <li>1 tsp baking powder</li>
+                <li>180g quick oats</li>
+                <li>110g fresh or frozen wild blueberries</li>
+                <li>110g freshly diced strawberries</li>
+            </ul>
+                <p>Vegan Icing</p>
+                <ul>
+                    <li>50g powdered sugar add more for a thicker frosting</li>
+                    <li>1 tsp softened vegan butter</li>
+                    <li>1 tsp vanilla</li>
+                    <li>1 tbsp almond milk add more for a thinner glaze</li>
+                </ul>
+            <p>Method</p>
+                <ol>
+                    <li>Preheat Oven to 350</li>
+                    <li>Mix together the almond milk, maple syrup, baking powder, vanilla, and butter.</li>
+                    <li>Add the oats and mix. Then, fold in the berries. </li>
+                    <li>Pour the batter into a 9x11 casserole dish and bake for 45 minutes. </li>
+                    <li>While baking, whisk together icing ingredients</li>
+                    <li>Drizzle with icing</li>
+                </ol>
         <button id="button-card">Read more</button>
       </div>
     </div>
@@ -148,22 +149,22 @@
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <img src="assets/images/stuffed-mushroom.jpg" alt="stuffed-mushroom">
-      <div class="caption">
-        <h3>Stuffed Portobello Mushrooms</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa laudantium molestias totam architecto facere minima, impedit autem consequatur numquam vel cum excepturi saepe voluptates eaque sunt perferendis laborum voluptatum?</p>
-        <p id="recipe">Ingredients</p>
-        <p>For the vegan stuffed mushrooms</p>
-        <ul>
-        <li>14 medium to large white mushrooms (mine measured 5 – 6 cm / 2 – 2.5 inches)</li>
-        <li>1 tablespoon olive oil plus more for brushing the mushrooms</li>
-        <li>3 shallots, finely diced</li>
-        <li>5 – 6 cloves of garlic, thinly sliced</li>
-        <li>3 tablespoons chopped walnuts</li>
-        <li>3 tablespoons chopped sun-dried tomatoes</li>
-        <li>3 tablespoons chopped parsley</li>
-        <li>1/2 teaspoon salt plus more for sprinkling the mushroom caps</li>
-        <li>Pepper, to taste</li>
-        </ul>
+        <div class="caption">
+            <h3>Stuffed Portobello Mushrooms</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa laudantium molestias totam architecto facere minima, impedit autem consequatur numquam vel cum excepturi saepe voluptates eaque sunt perferendis laborum voluptatum?</p>
+                 <p id="recipe">Ingredients</p>
+                 <p>For the vegan stuffed mushrooms</p>
+                     <ul>
+                         <li>14 medium to large white mushrooms (mine measured 5 – 6 cm / 2 – 2.5 inches)</li>
+                         <li>1 tablespoon olive oil plus more for brushing the mushrooms</li>
+                         <li>3 shallots, finely diced</li>
+                         <li>5 – 6 cloves of garlic, thinly sliced</li>
+                         <li>3 tablespoons chopped walnuts</li>
+                         <li>3 tablespoons chopped sun-dried tomatoes</li>
+                         <li>3 tablespoons chopped parsley</li>
+                         <li>1/2 teaspoon salt plus more for sprinkling the mushroom caps</li>
+                         <li>Pepper, to taste</li>
+                     </ul>
         <p>For the parsley-lemon dressing</p>
         <ul>
         <li>1/4 cup finely chopped parsley</li>
@@ -197,7 +198,7 @@
      <div class="col-sm-12 col-md-6 box">
      <div class="thumbnail">
       <img src="assets/images/woman-cake.jpg" alt="woman-cake">
-        <h3>"Delicious"- Karen.P</h3>
+        <h4>"Delicious"- Karen.P</h4>
         <p>I made the chocolate fudge cake last weekend and it was unbelievable. I can't believe how quick and easy this recipe was. I will definitely be making it again. </p>
     </div>
 </div>
@@ -205,26 +206,26 @@
     <div class="col-sm-12 col-md-6 box">
     <div class="thumbnail">
       <img src="assets/images/couple.jpg" alt="couple">
-        <h3>"Healthy recipes, natural ingredients"- Darren and Katrina</h3>
+        <h4>"Healthy recipes, natural ingredients"- Darren and Katrina</h4>
         <p>We're really enjoying the healthy dinnner recipes. All very easy to make, we are sure to get our 5 a day. </p>
     </div>
     </div>
-    <div class="col-sm-12 col-md-6 box">
-    <div class="thumbnail">
-      <img src="assets/images/woman-bun.jpg" alt="woman-bun">
-        <h3>"So many options, recipes for every craving" - Melissa Q.</h3>
-        <p>I can't stop myself making all these desserts they taste so good!! </p>
+        <div class="col-sm-12 col-md-6 box">
+            <div class="thumbnail">
+             <img src="assets/images/woman-bun.jpg" alt="woman-bun">
+                 <h4>"So many options, recipes for every craving" - Melissa Q.</h4>
+                <p>I can't stop myself making all these desserts they taste so good!! </p>
+            </div>
+        </div>
     </div>
+        <div class="col-sm-12 col-md-6 box">
+            <div class="thumbnail">
+                <img src="assets/images/birthday.jpg" alt="birthday">
+                 <h4>"Birthday success" - Jamie B.</h4>
+                 <p>I made an array of cakes from recipes here for my brothers birthday, they went down a treat. </p>
+            </div>
+        </div>
     </div>
-</div>
-    <div class="col-sm-12 col-md-6 box">
-    <div class="thumbnail">
-      <img src="assets/images/birthday.jpg" alt="birthday">
-        <h3>"Birthday success" - Jamie B.</h3>
-        <p>I made an array of cakes from recipes here for my brothers birthday, they went down a treat. </p>
-    </div>
- </div>
- </div>
 </section>
 
 <section>
@@ -233,15 +234,31 @@
 </section>
 
 <footer>
-      <ul class="social-media">
+    <ul class="social-media">
         <li class="contact-us">contact us on..</li>
         <li class="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
         <li class="instagram"><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
         <li class="twitter"><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
         <li class="mail"><a href="contact.html" target="_blank"><i class="fas fa-envelope"></i></a></li>
-        </ul>
+    </ul>
     
 </footer> 
+<script src="recipe.js"></script>
+<!-- JS Bootstrap links -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByFSvsdFxPwC6Tq_H6tRXJS5hoeTu6uyA&callback=initMap"
+        type="text/javascript"></script>
+<script src="assets/js/maps.js"></script>
+
         
 </body>
 </html>
