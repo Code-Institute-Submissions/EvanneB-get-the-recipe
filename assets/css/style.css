@@ -45,7 +45,7 @@ h1 {
 }
 
 /* Position the navbar container inside the image */
-.container {
+.container-nav {
   position: absolute;
   margin: 20px;
   width: auto;
@@ -62,7 +62,7 @@ h1 {
   float: left;
   color: grey;
   text-align: center;
-  padding: 14px 16px;
+  padding: 7px 8px;
   font-family: 'Dancing Script', cursive;
   text-decoration: none;
   font-size: 2.5rem;
@@ -166,7 +166,13 @@ h3 {
   }
 }
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { ... }
+@media (min-width: 576px) { 
+.topnav a {
+  text-align: center;
+  padding: 10px 13px;
+  font-size: 1rem;
+}
+ }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 

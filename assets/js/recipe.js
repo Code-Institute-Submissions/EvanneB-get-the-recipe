@@ -3,12 +3,10 @@ const searchButton = document.querySelector("#search");
 const recipeCards = document.querySelector("#content");
 const clearIcon = document.querySelector("#recipe-form__clear-icon");
 const searchBar = document.querySelector("#recipe-form__search-bar");
-​
 // ----------------------------------------------- Event Listeners
 searchButton.addEventListener("click", () => {
     recipeAPI();
 });
-​
 //Event listeners taken from https://www.mikedane.com/web-development/css/styling-search-bar/
 searchBar.addEventListener("keyup", () => {
     if(searchBar.value && clearIcon.style.visibility != "visible"){
@@ -17,17 +15,15 @@ searchBar.addEventListener("keyup", () => {
         clearIcon.style.visibility = "hidden";
     }
 });
-​
 clearIcon.addEventListener("click", () => {
     searchBar.value = "";
     clearIcon.style.visibility = "hidden";
 });
-​
 // ----------------------------------------------- Recipe API
 let appId = 'ba2e62ae2c',
     apiKey = 'd7502b2c57daa857f409d28f913314a60';
 // ^^ get your own keys! from edamam.com
-​
+
 // Get data from Recipe API
 async function recipeAPI() {
     let searchValue = document.querySelector("#recipe-form__search-bar").value;
@@ -36,9 +32,8 @@ async function recipeAPI() {
         .then(data => {
             recipeAPIData(data);
         })
-}
-​
-// Use data from Recipe API
+}​
+// Use data from Recipe API 
 function recipeAPIData(data) {
     for (let i = 0; i < 8; i++) {
         recipeCards.innerHTML += `
