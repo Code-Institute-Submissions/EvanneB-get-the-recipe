@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     
 </head>
@@ -26,7 +28,46 @@
     </div>
   </div>
 </div>
+<!-- Start Search bar -->
+    <section id="search-bar">
+        <div class="container main-container">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h3 class="main-container__heading">Recipe Search</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <form id="recipe-form">
+                        <div class="search-bar-wrapper">
+                            <i class="fas fa-search" id="recipe-form__search-icon"></i>
+                            <input type="text" name="search-bar" id="recipe-form__search-bar"
+                                   placeholder="Find a recipe">
+                            <i class="fas fa-times-circle" id="recipe-form__clear-icon"></i>
+                        </div>
+                        <div class="row recipe-form-checkbox">
+                            <div class="col-12 recipe-form-checkbox__search-wrapper">
+                                <button type="button" id="search" class="recipe-form-checkbox__search-button">Search
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="recipe-cards">
+        <div class="container recipe-cards">
+            <div class="row justify-content-between" id="content">
+​
+            </div>
+        </div>
+    </section>
+    <!-- End main search bar -->
+    <!-- Start inspiration -->
+</main>
 
+<div class="container">
 <h2>Recipes</h2>
         <p class="recipes-intro">Here you will find a compilation of some of my favourite recipes which I have collected over the years. All the recipes below can be adjusted to suit your dietary needs. I hope they help inspire you today. Please get in contact via the contact form if you have any questions.</p>
 
@@ -73,11 +114,11 @@
         <li>If the frosting seems too dry, add more milk, a tablespoon or two at a time. If the frosting seems too wet and doesn't hold it's shape, add more powdered sugar until it thickens up. </li>
         <li>Frost the cake using an icing spatula or just a butter knife</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
 
     <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -113,11 +154,12 @@
         <li>Divide between the cupcake cases, filling them two-thirds full, and bake for 20 - 25 mins until golden and risen. Leave to cool on a wire rack. </li>
         <li>To make the buttercream, beat the butter, icing sugar and vanilla with an electric whisk until pale and creamy. Divide between bowls and colour with different food colourings until you get desired strength. Spoon or pipe onto the cooled cupcakes. </li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -154,11 +196,12 @@
         <li>Spoon the icing mixture over the cake.</li>
         <li>Cut into slices and serve.</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -201,11 +244,12 @@
         <li>Divide the mixture between the prepared tins and bake for 25-30 mins until a skewer inserted into the middle of the cake comes out cleanly. Cool in the tin for 5 mins before transferring to a wire rack to cool completely.</li>
         <li>Sandwich the cakes together with half the icing then cover the top with the remaining icing (add a splash of oat milk if the icing feels too firm). Scatter over the nuts and dust the cake with a little cinnamon. </li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -239,11 +283,12 @@
         <li>While the cakes are cooling, make the filling. To make the vegan buttercream, whisk or beat together the dairy-free spread, icing sugar and remaining vanilla seeds until pale and fluffy. Dairy-free spreads do vary so if the spread you are using is quite soft try to avoid using electric beaters. Stir the ingredients together instead to avoid overworking it. However, if the mixture is too firm, use electric beaters to help lighten it and add 1-2 tbsp of dairy-free milk when whisking.</li>
         <li>Spread the jam onto one of the cooled sponges, top with the buttercream then place the other sponge on top. Dust the assembled cake with a little icing sugar or caster sugar before slicing.</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -273,11 +318,12 @@
         <li>Bake for another 20 minutes, or until a skewer comes out clean</li>
         <li>Allow to cool a little before slicing. It's delicious freshly baked, but develops a lovely gooey quality the day after</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -306,11 +352,12 @@
         <li>Add oil, vanilla, melted chocolate and almond milk. Mix with a wooden spoon until smooth and combined. Add chocolate chips and mix gently.</li>
         <li>4.	Tranfer brownie batter to prepared pan and bake for 25-30 minutes or until a skewer inserted in the middle comes out clean. Try not to over bake or brownies will turn cakey,</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -357,11 +404,12 @@
         <li>Tip in the avocado mix, 200g sifted icing sugar, melted chocolate and 1 tsp vanilla, and keep mixing to make a shiny, thick frosting. Use this to sandwich and top the cake.</li>
         <li>Slice and serve</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <h2>Dinners</h2>
 <div class="row-no-gutters">
@@ -413,11 +461,12 @@
         <li>Bake for 35–40 minutes, or the pasta has softened and the topping is nicely browned and bubbling. Stand for 5 minutes before cutting to allow the filling to settle.</li>
         <li>Pour over just under half of the white sauce, after removing the bay leaf, and very gently top with the remaining vegetable mixture. Finish with a final layer of lasagne and the rest of the white sauce.</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -448,11 +497,12 @@
         <li>While the broccoli is cooking, make the tahini dressing. Put all ingredients in a bowl and whisk together until smooth.</li>
         <li>Remove the broccoli from the oven and tip into a serving bowl. Drizzle over the tahini dressing and serve hot.</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -477,11 +527,12 @@
         <li>Refrigerate your paste for 1-2 hours. Then when you are ready to fry, form into irregular shapes (see note). Before frying, optionally combine 1 teaspoon each of additional five spice and white pepper to use as a dusting powder.</li>
         <li>Heat the oil. Drop your chickpea balls in a few at a time, making sure not to crowd the pan. Fry for 1-2 minutes, depending on your desired level of brownness. If you are using a dusting powder, dust your chickpea balls as soon as you remove them. Enjoy immediately.</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -514,11 +565,12 @@
         <li>Meanwhile, to make the sauce, pour the almond milk into a small saucepan and bring to a gentle simmer. Add the peanut butter, curry powder and tomato puree, stirring constantly to ensure the sauce isn’t sticking to the bottom of the pan. Remove from the heat then stir I the nutritional yeast and soy sauce.</li>
         <li>To serve, drizzle the skewers with satay sauce.</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -552,11 +604,12 @@
         <li>Once the rice is cooked but still has a little bite, add the frozen peas and cook for another few minutes until just cooked.</li>
         <li>Stir in the nutritional yeast, lemon zest and juice, and some seasoning, divide between shallow bowls and top with the parsley. </li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -594,11 +647,12 @@
         <li>Bake for 45 minutes, until the top starts to get crispy. Allow to rest for about 20 minutes before tipping out onto a serving plate.</li>
         <li>Slice and serve.</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -641,11 +695,12 @@
         <li>Crimp the edges using a fork and score a criss-cross pattern on the top with a sharp knife. Finally, dip a pastry brush in the aquafaba  (or a little dairy-free milk) and brush the top of the pie, to help it brown, plus secure the edge of the pie crust to the dish.</li>
         <li>Cook for 25 minutes until golden brown. Serve straight away. </li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+
 
 <div class="row-no-gutters">
   <div class="col-sm-6 col-md-4 col-lg-3">
@@ -685,11 +740,19 @@
         <li>Add your vegetables and stir-fry for a further 4 minutes. Squeeze in the juice from half the lime and add a splash of soy sauce.</li>
         <li>Tip the vegetables into bowls, top with the crispy tofu and serve with the remaining lime wedges and some chilli sauce, if you like extra heat.</li>
         </ol>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
       </div>
     </div>
   </div>
 </div>
-<button onclick="myFunction()" id="myBtn">Read more</button>
+</div>
+
+<section>
+<h2>Find some of my home made cakes in the below locations..</h2>
+<br>
+<div id="map">
+</div>
+</section>
 
 <footer>
       <ul class="social-media">
@@ -701,15 +764,21 @@
         </ul>
 </footer>  
 
-<script type="text/javascript" src="js/index.js"></script> 
-<script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+<script src="assets/js/recipe.js"></script>
+<!-- JS Bootstrap links -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"
-        defer></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"
-        defer></script>   
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" i
+        ntegrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByFSvsdFxPwC6Tq_H6tRXJS5hoeTu6uyA&callback=initMap"
+        type="text/javascript"></script>
+<script src="assets/js/maps.js"></script>
+<script src="assets/js/index.js"></script>   
+
 </body>
 </html>
