@@ -8,8 +8,7 @@
 /* Navbar */
 
 body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;
-background: #eafafd;}
+* {box-sizing: border-box;}
 
 .bg-img {
   background-image: url("../images/cake.png");
@@ -40,7 +39,6 @@ h1 {
     color: grey;
     font-family: 'Dancing Script', cursive;
     text-align: center;
-    background-color: #eafafd;
     font-size: 6rem;
 }
 
@@ -91,6 +89,13 @@ button {
 	font-size: 1em;
     
 }
+/*Carousel*/
+.carousel-control {
+    background-color: transparent;
+}
+.container {
+    background-color: none;
+}
 
 /* Social Media */
 footer {
@@ -111,18 +116,6 @@ footer {
     margin-left: 6%;
     margin-right: auto;
     color:#d5a6bd
-}
-i .facebook {
-    color: #b6d7a8;
-}
-i .instagram {
-    color: #b6d7a8;
-}
-i .twitter {
-    color: #b4a7d6;
-}
-i .mail {
-    color: #d5a6bd;
 }
 
 /*Recipes*/

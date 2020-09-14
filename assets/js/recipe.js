@@ -3,10 +3,12 @@ const searchButton = document.querySelector("#search");
 const recipeCards = document.querySelector("#content");
 const clearIcon = document.querySelector("#recipe-form__clear-icon");
 const searchBar = document.querySelector("#recipe-form__search-bar");
+
 // ----------------------------------------------- Event Listeners
 searchButton.addEventListener("click", () => {
     recipeAPI();
 });
+
 //Event listeners taken from https://www.mikedane.com/web-development/css/styling-search-bar/
 searchBar.addEventListener("keyup", () => {
     if(searchBar.value && clearIcon.style.visibility != "visible"){
@@ -15,10 +17,12 @@ searchBar.addEventListener("keyup", () => {
         clearIcon.style.visibility = "hidden";
     }
 });
+
 clearIcon.addEventListener("click", () => {
     searchBar.value = "";
     clearIcon.style.visibility = "hidden";
 });
+
 // ----------------------------------------------- Recipe API
 let appId = 'ba2e62ae2c',
     apiKey = 'd7502b2c57daa857f409d28f913314a60';
