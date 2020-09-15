@@ -40,6 +40,7 @@ h1 {
     font-family: 'Dancing Script', cursive;
     text-align: center;
     font-size: 6rem;
+    margin: 0;
 }
 
 /* Position the navbar container inside the image */
@@ -131,6 +132,7 @@ h2 {
   font-size: 4rem; 
   padding-left: 10%;
   position: center; 
+  margin: 0;
 }
 h3 {
     font-style: bold;
