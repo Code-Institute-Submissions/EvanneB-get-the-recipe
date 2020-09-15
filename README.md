@@ -1,6 +1,6 @@
 # Get the Recipe
 
-Get the Recipe is a website aimed at providing easy access to recipes to suit your specific needs. 
+Get the Recipe is a website aimed at providing easy access to recipes to suit your specific needs. I have also used this site as a space to keep my favouite recipes and provide inspiration for users. 
 Our search algorithm returns the most relevant recipes from the most popular and best recipes sources on the web. We order recipes by their cookability and quality so your customer can always count on getting the best recipes!
  
 ## UX
@@ -17,22 +17,39 @@ This section is also where you would share links to any wireframes, mockups, dia
 I will use an API called edamam which is a search algorithm which retuurns the most popular recipes for 
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- Navbar - allows users to easily naviagte between the three pages, Home, Recipes and Contact.
+- Search function - allows users to find recipes specific to their needs or they can even find recipes by searching the ingredients they have available. Examples of searches "low-fat muffins", "gluten-free brownies", "apples, flour, sugar".
+- Map function - this shows the user the marked locations where I sell some of my baked goods. The 
+- Contact form - allows users to submit comments, questions directly to my mailbox by filling in the contact form. 
+- Recipe preview - users can view pictures of the recipes and have the option of viewing the whole recipe when the click the 'read more' button. 
+- Carousel of testimmonials - the carousel 
 
 ### Features Left to Implement
-- Another feature idea
+- In future I would like to impplement 
 
 ## Technologies Used
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
+- [GitHub](https://github.com/)
+    - The project uses **GitHub** for version control.
+- [GitPod](https://gitpod.io/)
+    - The project uses **Gitpod** for the working environment.
+- [HTML]
+    - The project is written using **HTML**.
+- [CSS]
+    - **CSS** is used to style the project.
+- [Bootstrap 3](https://getbootstrap.com/)
+    - The  **Bootstrap 3** library is used to assist with CSS styling. 
+- [Javascript](https://javascript.com)
+    - The project uses **Javascript** to implement the carousel feature, 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
+- [Edamam API](https://www.edamam.com/)
+    - The project uses the **Edamam recipe search API** to access the thousands of recipes they have available.
+- [Google Maps](https://cloud.google.com/maps-platform/maps)
+    - The project uses **Google Maps API** to show the user the exact locations where my baked goods can be found.
+- [Chrome Develper Tools]
+    - I used **Chrome Developer Tools** to help identify problems in the code.
 
 
 ## Testing
@@ -70,10 +87,49 @@ In addition, if it is not obvious, you should also describe how to run your code
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The **Healthy Breakfast Pancakes** recipe was taken from Roz Purcels 'No Fuss Vegan' cookbook pg 
+- The **Berry Crumble** recipe is from [Peanut Butter and Jilly](https://peanutbutterandjilly.com/recipes/fourth-of-july-berry-baked-oatmeal/)
+- The **Stuffed Portobello Mushrooms** recipe is from Roz Purcels 'No Fuss Vegan' cookbook pg
+- The **Chocolate Cake** recipe is from [Nora Cooks](https://www.noracooks.com/vegan-chocolate-cake/)
+- The **Cupcakes** recipe is from [BBC Good Food](https://www.bbcgoodfood.com/recipes/vegan-cupcakes)
+- The **Lemon Drizzle Cake** recipe is from [Kitchen Sanctuary](https://www.kitchensanctuary.com/vegan-lemon-drizzle-cake/)
+- The **Carrot Cake** recipe is from [BBC Good Food](https://www.bbcgoodfood.com/recipes/vegan-carrot-cake)
+- The **Sponge Cake** recipe is from [BBC Good Food](https://www.bbcgoodfood.com/recipes/vegan-sponge)
+- The **Banana Bread** [BBC Good Food](https://www.bbcgoodfood.com/recipes/vegan-banana-bread)
+- The **Brownies** recipe is from [Sweetest Menu](https://www.sweetestmenu.com/vegan-brownies/)
+- The **Chocolate Fudge Cake** recipe is from [BBC Good Food](https://www.bbcgoodfood.com/recipes/chocolate-avocado-cake)
+- The **Lasange** recipe is from [BBC Good Food](https://www.bbc.co.uk/food/recipes/vegan_lasagne_89049)
+- The **Baked Broccoli with Creamy Tahini Dressing** recipe was taken from Roz Purcels 'No Fuss Vegan' cookbook pg
+- The **Vegan Taiwanese Popcorn Chickpea Chicken** recipe is from [I am Food Blog](https://iamafoodblog.com/vegan-taiwanese-popcorn-chickpea-chicken-recipe/)
+- The **Chickpea Satay Skewers** recipe was taken from Roz Purcels 'No Fuss Vegan' cookbook pg
+- The **Risotto** recipe is from [Olive](https://www.olivemagazine.com/recipes/vegan/vegan-risotto/)
+- The **Mushroom and Chestnut Lentil Loaf** recipe is from [V8 Juice](https://v8juice.co.uk/recipes/mushroom-chestnut-lentil-loaf/)
+- The **Mushroom Pie** recipe is from [Wallflower Kitchen](http://wallflowerkitchen.com/creamy-leek-mushroom-pie-vegan/)
+- The **Tofu Stir Fry** recipe is from [Jamie Oliver](https://www.jamieoliver.com/recipes/vegetables-recipes/simple-veggie-tofu-stir-fry/)
 
 ### Media
 - The photos used in this site were obtained from ...
+- The **Healthy Breakfast Pancakes** image was taken from [Unsplash](https://unsplash.com/photos/iuKj0rRRddA) 
+- The **Berry Crumble** image is from [Peanut Butter and Jilly](https://peanutbutterandjilly.com/recipes/fourth-of-july-berry-baked-oatmeal/)
+- The **Stuffed Portobello Mushrooms** image is from [Cilantro and Citronella](https://www.cilantroandcitronella.com/wp-content/uploads/2016/09/stuffed-mushroom_1.jpg)
+- The **Chocolate Cake** image is from [Unsplash](https://unsplash.com/photos/Id8BO472TbY)
+- The **Cupcakes** image is from [Unsplash](https://unsplash.com/photos/MKBoRZEGeiM)
+- The **Lemon Drizzle Cake** image is from [Unsplash](https://unsplash.com/photos/-Qe0rpF2ThY)
+- The **Carrot Cake** image is from [Unsplash](https://unsplash.com/photos/79bdGHMW_O0)
+- The **Sponge Cake** image is from [Unsplash](https://unsplash.com/photos/DIUJSBiJNoc)
+- The **Banana Bread** [Unsplash](https://unsplash.com/photos/E2ZeI008uWg)
+- The **Brownies** image is from [Unsplash](hhttps://unsplash.com/photos/1rqk6XVnw44)
+- The **Chocolate Fudge Cake** image is from [Recipe Tin Eats](https://www.recipetineats.com/easy-chocolate-fudge-cake/  )
+- The **Lasange** image is from [BBC Good Food](https://www.bbc.co.uk/food/recipes/vegan_lasagne_89049)
+- The **Baked Broccoli with Creamy Tahini Dressing** image was taken from [Bon Appetit](https://www.bonappetit.com/story/roasted-broccoli-recipe-guide-to-roasting-vegetables)
+- The **Vegan Taiwanese Popcorn Chickpea Chicken** image is from [I am Food Blog](https://iamafoodblog.com/vegan-taiwanese-popcorn-chickpea-chicken-recipe/)
+- The **Chickpea Satay Skewers** image was taken from [A Spicy Perspective](https://www.aspicyperspective.com/tuna-chickpea-kofta-harissa-yogurt-dip/
+
+)
+- The **Risotto** image is from [Unsplash](https://unsplash.com/photos/708OpfCW4H8)
+- The **Mushroom and Chestnut Lentil Loaf** image is from [BBC Good Food](hhttps://www.bbc.co.uk/food/recipes/vegan_nut_loaf_99997)
+- The **Mushroom Pie** image is from [Wallflower Kitchen](http://wallflowerkitchen.com/creamy-leek-mushroom-pie-vegan/)
+- The **Tofu Stir Fry** image is from [Unsplash](https://unsplash.com/photos/5Q_Edarv5zQ)
 
 ### Acknowledgements
 

@@ -24,8 +24,8 @@ clearIcon.addEventListener("click", () => {
 });
 
 // ----------------------------------------------- Recipe API
-let appId = 'ba2e62ae2c',
-    apiKey = 'd7502b2c57daa857f409d28f913314a60';
+let appId = '187461a3',
+    apiKey = '40fec7274b46ff61bd3cfad60ed50534';
 // ^^ get your own keys! from edamam.com
 
 // Get data from Recipe API
