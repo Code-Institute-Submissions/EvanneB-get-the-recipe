@@ -1,95 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet');
-*
-{
-    background-color: #eafafd;
-
-}
 
 /* Navbar */
-
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;
-background-color: #eafafd;}
-
-.bg-img {
-
-  background-color: #eafafd;
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #eafafd
+}
+.bg-img {
+    background-color: #eafafd;
+}
 h1 {
     color: grey;
     font-family: 'Dancing Script', cursive;
     text-align: center;
     font-size: 6rem;
     margin: 0;
-    padding-bottom: 0%;
+    padding-bottom: 1.5%;
     padding-top: 1.5%;
-}
-
-/* The navbar */
-.topnav {
-  overflow: hidden;
-  padding-top: 0%;
-  padding-bottom: 0%;
-  margin: 0;
 }
 
 /* Navbar links */
 .topnav a {
-  color: grey;
-  text-align: center;
-  padding: 7px 8px;
-  font-family: 'Dancing Script', cursive;
-  text-decoration: none;
-  font-size: 5rem;
+    color: grey;
+    text-align: center;
+    padding: 7px 8px;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    font-size: 2.5rem;
 }
-
 .topnav a:hover {
-  background-color: #a2c4c9;
-  color: #fafafa;
-}
-.main-container__heading {
-   font-family: 'Dancing Script', cursive; 
-   color: grey;
-   font-size: 5rem;
-   padding-top: 2%;
+    background-color: #a2c4c9;
+    color: #fafafa;
 }
 /* About Text */
 .about {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 200;
-    font-size: 3rem;
-    padding: 2%;
-    text-align: center;
+    padding: 5%;
 }
-#search {
-    margin: 2% 0;
-}
-/* Button */
-button {
-    box-sizing: border-box;
-    border-radius: 4px;
-    background-color: rgba(51, 148, 172, 0.85);
-    text-align: center;
-    padding: 1em .75em;
-    text-decoration: none;
-	font-size: 1em;
-    
-}
-/*Carousel*/
-.carousel-caption {
-    background-color: none;
-}
-.container {
-    background-color: none;
-}
-
 /* Social Media */
 footer {
     height: 10rem;
     background: #eafafd;
-    
+    text-align: center;
 }
 .contact-us {
     font-family: 'Dancing Script', cursive;
@@ -104,75 +59,49 @@ footer {
     margin-top: 4rem;
     margin-left: 6%;
     margin-right: auto;
-    color:#d5a6bd
+    color: #d5a6bd
 }
-
 /*Recipes*/
 .recipes-intro {
     font-family: 'Dancing Script', cursive;
     font-weight: 300;
     font-size: 3rem;
-    padding: 10%;
+    padding: 2rem;
 }
 h2 {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 400;
-  font-size: 4rem; 
-  padding-left: 10%;
-  position: center; 
-  margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    font-size: 4rem;
+    padding-left: 2rem;
+    position: center;
+    margin: 1rem 0;
 }
 h3 {
     font-style: bold;
     font-size: 3rem;
-    margin: 0;
-}
-.row {
-    margin-bottom: 0;
-    padding: 2%
-
 }
 p {
-    background-color: transparent;
+    margin: 1rem 0;
+    padding-left: 2rem;
 }
 /*Testimonials*/
 .thumbnail {
     background-color: #eafafd;
     padding-bottom: 0;
 }
-/*Map API*/
-#map {
-    height: 400px; 
-    width: 100%;  
-    }
- /* Media Queries */
 
+/* Media Queries */
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
-.topnav a {
-  text-align: center;
-  padding: 10px 13px;
-  font-size: 2rem;
+@media (min-width: 576px) {
+    .topnav a {
+        text-align: center;
+        padding: 10px 13px;
+        font-size: 3rem;
+    }
 }
- }
-
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { 
- .topnav a {
-     font-size: 4rem;
- }
-}
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-
- .topnav a {
-     font-size: 6rem;
- }
- }
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-
-
+@media (min-width: 768px) {
+    .topnav a {
+        font-size: 3.5rem;
+    }
 }
