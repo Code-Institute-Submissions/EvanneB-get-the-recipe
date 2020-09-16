@@ -1,12 +1,11 @@
 const searchBtn = document.querySelector("#searchBtn");
 const recipes = document.querySelector("#content");
 const search = document.querySelector("#search_recipes");
-​
+
 searchBtn.addEventListener("click", () => {
     enquireTheRecipeAPI();
 });
-​
-​
+
 const appId = '187461a3';
 const apiKey = '40fec7274b46ff61bd3cfad60ed50534';
 ​
@@ -18,7 +17,7 @@ async function enquireTheRecipeAPI() {
             getTheRecipeDetails(data);
         })
 }
-​
+
 function getTheRecipeDetails(data) {
     recipes.innerHTML = "";
     for (let counter = 0; counter < 12; counter++) {
