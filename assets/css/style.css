@@ -8,7 +8,8 @@
 /* Navbar */
 
 body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
+* {box-sizing: border-box;
+background-color: #eafafd;}
 
 .bg-img {
   background-image: url("../images/cake.png");
@@ -42,8 +43,8 @@ h1 {
     text-align: center;
     font-size: 6rem;
     margin: 0;
-    padding-bottom: 2%;
-    padding-top: 2%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
 }
 
 /* The navbar */
@@ -69,7 +70,7 @@ h1 {
 
 /* About Text */
 .about {
-    padding: 10%;
+    padding: 5%;
 }
 #search {
     margin: 2% 0;
@@ -86,8 +87,8 @@ button {
     
 }
 /*Carousel*/
-.carousel-control {
-    background-color: transparent;
+.carousel-caption {
+    background-color: none;
 }
 .container {
     background-color: none;
@@ -133,6 +134,10 @@ h3 {
     font-style: bold;
     font-size: 3rem;
 }
+
+p {
+    background-color: transparent;
+}
 /*Testimonials*/
 .thumbnail {
     background-color: #eafafd;
@@ -144,17 +149,7 @@ h3 {
     width: 100%;  
     }
  /* Media Queries */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .header-right {
-    float: none;
-  }
-}
+
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
 .topnav a {
@@ -162,6 +157,11 @@ h3 {
   padding: 10px 13px;
   font-size: 1rem;
 }
+.bg-img {
+    min-height: 500px;
+    background-position: center;
+
+ }
  }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -177,9 +177,19 @@ h3 {
 }
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) { 
+    .bg-img {
+    max-height: 900px;
+    background-position: center;
+
+ }
+ }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
+    .bg-img {
+    max-height: 1200px;
+    background-position: center;
 
+ }
 }
