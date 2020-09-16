@@ -36,10 +36,7 @@ h1 {
     background-color: #a2c4c9;
     color: #fafafa;
 }
-/* About Text */
-.about {
-    padding: 5%;
-}
+
 /* Social Media */
 footer {
     height: 10rem;
@@ -61,13 +58,6 @@ footer {
     margin-right: auto;
     color: #d5a6bd
 }
-/*Recipes*/
-.recipes-intro {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 300;
-    font-size: 3rem;
-    padding: 2rem;
-}
 h2 {
     font-family: 'Dancing Script', cursive;
     font-weight: 400;
@@ -84,10 +74,8 @@ p {
     margin: 1rem 0;
     padding-left: 2rem;
 }
-/*Testimonials*/
 .thumbnail {
     background-color: #eafafd;
-    padding-bottom: 0;
 }
 
 /* Media Queries */
@@ -102,6 +90,6 @@ p {
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
     .topnav a {
-        font-size: 3.5rem;
+        font-size: 5rem;
     }
 }
