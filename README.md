@@ -82,13 +82,11 @@ I used the following technologies in this project:
     8. Try to access "home" page from "contact" page
     9. Return to "contact" page and try to access "recipe" page
 
+2. Recipe search:
+    1. Go to "recipe" page
+    2. Try to search for a recipe
+    3. Try to search for an em
 
-
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 1. Contact form:
     1. Go to the "Contact Us" page
@@ -108,6 +106,8 @@ If this section grows too long, you may want to split it off into a separate fil
 - At various stages I used 'git add .' to add changes to the repository.
 - I used 'git commit -m "..."' to commit these changes with a message identifying what has been changed.
 - I used 'git push' to push up the local git repository. 
+- The GitHub repository was made live via GitHub pages
+- The websie can be found at https://evanneb.github.io/get-the-recipe/.
 
 
 ## Credits
