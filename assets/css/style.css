@@ -98,13 +98,14 @@ button {
 footer {
     height: 10rem;
     background: #eafafd;
+    
 }
 .contact-us {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
 }
 .social-media li {
-    text-align: center;
+    text-align: right;
     display: inline;
 }
 .social-media i {
