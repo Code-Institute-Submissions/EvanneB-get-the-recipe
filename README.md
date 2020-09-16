@@ -4,17 +4,38 @@ Get the Recipe is a website aimed at providing easy access to recipes to suit yo
 Our search algorithm returns the most relevant recipes from the most popular and best recipes sources on the web. We order recipes by their cookability and quality so your customer can always count on getting the best recipes!
  
 ## UX
- 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+## The Strategy Plane
+This website aims to;
+- provide recipes for users looking to bake or cook someting specific with the use of the search function
+- inspire users by hosting some recipes on the site
+- increase exposure for my home-baking enterprise by providing a contact form and locations where my baked goods are sold
+- increase social media presence
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+## The Scope Plane
+Users will be able to achieve the above goals through the use of the following;
+- The edamam API function which allows us to search thousands of recipes.
+- The recipes page will feature a range of different recipes to inspire users.
+- The maps API function will show users where they can buy my baked goods.
+- The contact form will allow users to get in contact with me regarding any questions/ feedback they have.
+- The social media links at the bottom of the page allow users to contact us on Facebook, Twitter, Instagram and Pinterest.
+
+## The Structure Plane
+The webiste will consist of three pages, a home page, recipes page and contact page.
+The navigation bar at the top of the page will allow the user to switch between the pages. 
+
+## The Skeletal Plane
+## The Surface Place
+The website will host a range of images of food to tempt uses and encourage them to bake. The recipes will display an image with a brief description of the recipe and a 'read more' button below were users can access the recipe.
+The background will be a light blue colur as it is a colour which represent peace and calm. I find this suits thereputic act of baking. 
+I will use cursive text as it gives a more personal feel to the page. The text colour will be grey in contrast to the light coloured background.
+
+
+
+
+
 
 ## Features
-
-I will use an API called edamam which is a search algorithm which retuurns the most popular recipes for 
  
 ### Existing Features
 - Navbar - allows users to easily naviagte between the three pages, Home, Recipes and Contact.
@@ -25,30 +46,32 @@ I will use an API called edamam which is a search algorithm which retuurns the m
 - Carousel of testimmonials - the carousel 
 
 ### Features Left to Implement
-- In future I would like to impplement 
+In future I would like to include:
+- a profile section where users can save there favourite recipes and basically create their very own online cookbook.
+- a healthy eating section where users can learn more about different foods and their benefits.
 
 ## Technologies Used
+I used the following technologies in this project: 
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 - [GitHub](https://github.com/)
     - The project uses **GitHub** for version control.
 - [GitPod](https://gitpod.io/)
     - The project uses **Gitpod** for the working environment.
-- [HTML]
+- HTML
     - The project is written using **HTML**.
-- [CSS]
+- CSS
     - **CSS** is used to style the project.
 - [Bootstrap 3](https://getbootstrap.com/)
     - The  **Bootstrap 3** library is used to assist with CSS styling. 
 - [Javascript](https://javascript.com)
-    - The project uses **Javascript** to implement the carousel feature, 
+    - The project uses **Javascript** to implement the carousel feature, the edamam api, maps api and read more buttons.
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
 - [Edamam API](https://www.edamam.com/)
     - The project uses the **Edamam recipe search API** to access the thousands of recipes they have available.
 - [Google Maps](https://cloud.google.com/maps-platform/maps)
     - The project uses **Google Maps API** to show the user the exact locations where my baked goods can be found.
-- [Chrome Develper Tools]
+- Chrome Develper Tools
     - I used **Chrome Developer Tools** to help identify problems in the code.
 
 
@@ -87,9 +110,9 @@ In addition, if it is not obvious, you should also describe how to run your code
 ## Credits
 
 ### Content
-- The **Healthy Breakfast Pancakes** recipe was taken from Roz Purcels 'No Fuss Vegan' cookbook pg 
+- The **Healthy Breakfast Pancakes** recipe was taken from Roz Purcell's 'No Fuss Vegan'cookbook (2020) pp 52
 - The **Berry Crumble** recipe is from [Peanut Butter and Jilly](https://peanutbutterandjilly.com/recipes/fourth-of-july-berry-baked-oatmeal/)
-- The **Stuffed Portobello Mushrooms** recipe is from Roz Purcels 'No Fuss Vegan' cookbook pg
+- The **Stuffed Portobello Mushrooms** recipe is from Roz Purcell's 'No Fuss Vegan'cookbook (2020) pp 165
 - The **Chocolate Cake** recipe is from [Nora Cooks](https://www.noracooks.com/vegan-chocolate-cake/)
 - The **Cupcakes** recipe is from [BBC Good Food](https://www.bbcgoodfood.com/recipes/vegan-cupcakes)
 - The **Lemon Drizzle Cake** recipe is from [Kitchen Sanctuary](https://www.kitchensanctuary.com/vegan-lemon-drizzle-cake/)
@@ -99,9 +122,9 @@ In addition, if it is not obvious, you should also describe how to run your code
 - The **Brownies** recipe is from [Sweetest Menu](https://www.sweetestmenu.com/vegan-brownies/)
 - The **Chocolate Fudge Cake** recipe is from [BBC Good Food](https://www.bbcgoodfood.com/recipes/chocolate-avocado-cake)
 - The **Lasange** recipe is from [BBC Good Food](https://www.bbc.co.uk/food/recipes/vegan_lasagne_89049)
-- The **Baked Broccoli with Creamy Tahini Dressing** recipe was taken from Roz Purcels 'No Fuss Vegan' cookbook pg
+- The **Baked Broccoli with Creamy Tahini Dressing** recipe was taken from Roz Purcell's 'No Fuss Vegan'cookbook (2020) pp 162
 - The **Vegan Taiwanese Popcorn Chickpea Chicken** recipe is from [I am Food Blog](https://iamafoodblog.com/vegan-taiwanese-popcorn-chickpea-chicken-recipe/)
-- The **Chickpea Satay Skewers** recipe was taken from Roz Purcels 'No Fuss Vegan' cookbook pg
+- The **Chickpea Satay Skewers** recipe was taken from Roz Purcell's 'No Fuss Vegan'cookbook (2020) pp 136
 - The **Risotto** recipe is from [Olive](https://www.olivemagazine.com/recipes/vegan/vegan-risotto/)
 - The **Mushroom and Chestnut Lentil Loaf** recipe is from [V8 Juice](https://v8juice.co.uk/recipes/mushroom-chestnut-lentil-loaf/)
 - The **Mushroom Pie** recipe is from [Wallflower Kitchen](http://wallflowerkitchen.com/creamy-leek-mushroom-pie-vegan/)

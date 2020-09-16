@@ -27,14 +27,17 @@ background-color: #eafafd;}
   animation-duration: 2s;
   animation-fill-mode: forwards;
 
+  margin: 0%;
+
+
 
 }
 @keyframes img-zoom {
     from {
-        transform: scale(0.9)
+        transform: scale(0.8)
     }
     to {
-        transform: scale(1.10)
+        transform: scale(1.05)
     }
 }
 h1 {
@@ -43,13 +46,16 @@ h1 {
     text-align: center;
     font-size: 6rem;
     margin: 0;
-    padding-bottom: 1.5%;
+    padding-bottom: 0%;
     padding-top: 1.5%;
 }
 
 /* The navbar */
 .topnav {
   overflow: hidden;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin: 0;
 }
 
 /* Navbar links */
@@ -67,10 +73,18 @@ h1 {
   background-color: #a2c4c9;
   color: #fafafa;
 }
-
+.main-container__heading {
+   font-family: 'Dancing Script', cursive; 
+   color: grey;
+   font-size: 3rem;
+   padding-top: 2%;
+}
 /* About Text */
 .about {
-    padding: 5%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 200;
+    font-size: 2rem;
+    padding: 2%;
 }
 #search {
     margin: 2% 0;
@@ -134,8 +148,13 @@ h2 {
 h3 {
     font-style: bold;
     font-size: 3rem;
+    margin: 0;
 }
+.row {
+    margin-bottom: 0;
+    padding: 2%
 
+}
 p {
     background-color: transparent;
 }
@@ -156,22 +175,21 @@ p {
 .topnav a {
   text-align: center;
   padding: 10px 13px;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 .bg-img {
-    min-height: 500px;
+    min-height: 576px;
     background-position: center;
-
  }
  }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
 .bg-img {
-    min-height: 650px;
+    min-height: 768px;
     background-position: center;
 
- }
+}
  .topnav a {
      font-size: 3.5rem;
  }
@@ -180,9 +198,12 @@ p {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
     .bg-img {
-    max-height: 900px;
+    max-height: 992px;
     background-position: center;
 
+ }
+ .topnav a {
+     font-size: 4rem;
  }
  }
 
