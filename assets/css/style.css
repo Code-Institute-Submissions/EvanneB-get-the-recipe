@@ -12,34 +12,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
 background-color: #eafafd;}
 
 .bg-img {
-  background-image: url("../images/cake.png");
 
-  min-height: 350px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;  
-  background-attachment: fixed;
   background-color: #eafafd;
-  
-  position: relative;
-
-  animation-name: img-zoom;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-
-  margin: 0%;
-
-
 
 }
-@keyframes img-zoom {
-    from {
-        transform: scale(0.8)
-    }
-    to {
-        transform: scale(1.05)
-    }
-}
+
 h1 {
     color: grey;
     font-family: 'Dancing Script', cursive;
@@ -60,13 +37,12 @@ h1 {
 
 /* Navbar links */
 .topnav a {
-  float: left;
   color: grey;
   text-align: center;
   padding: 7px 8px;
   font-family: 'Dancing Script', cursive;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 5rem;
 }
 
 .topnav a:hover {
@@ -76,15 +52,16 @@ h1 {
 .main-container__heading {
    font-family: 'Dancing Script', cursive; 
    color: grey;
-   font-size: 3rem;
+   font-size: 5rem;
    padding-top: 2%;
 }
 /* About Text */
 .about {
     font-family: 'Dancing Script', cursive;
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 2%;
+    text-align: center;
 }
 #search {
     margin: 2% 0;
@@ -177,41 +154,25 @@ p {
   padding: 10px 13px;
   font-size: 2rem;
 }
-.bg-img {
-    min-height: 576px;
-    background-position: center;
- }
  }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
-.bg-img {
-    min-height: 768px;
-    background-position: center;
-
-}
  .topnav a {
-     font-size: 3.5rem;
+     font-size: 4rem;
  }
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
-    .bg-img {
-    max-height: 992px;
-    background-position: center;
 
- }
  .topnav a {
-     font-size: 4rem;
+     font-size: 6rem;
  }
  }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-    .bg-img {
-    max-height: 1200px;
-    background-position: center;
 
- }
+
 }
