@@ -84,21 +84,29 @@ I used the following technologies in this project:
 
 2. Recipe search:
     1. Go to "recipe" page
-    2. Try to search for a recipe
-    3. Try to search for an em
+    2. Try to search for a recipe and verify that it works
+    3. Try to search for another recipe and verify that a new search has completed
 
-
-1. Contact form:
+3. Contact form:
     1. Go to the "Contact Us" page
     2. Try to submit the empty form and verify that an error message about the required fields appears
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
     4. Try to submit the form with all inputs valid and verify that a success message appears.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+4. Social media links:
+    1. Go to facebook icon on 'home' page, click and ensure facebook opens in new tab
+    2. Go to instagram icon on 'home' page, click and ensure instagram opens in new tab
+    3. Go to twitter icon on 'home' page, click and ensure twitter opens in new tab
+    4. Go to pinterest icon on 'home' page, click and ensure pinterest opens in new tab
+    5. Go to facebook icon on 'recipe' page, click and ensure facebook opens in new tab
+    6. Go to instagram icon on 'recipe' page, click and ensure instagram opens in new tab
+    7. Go to twitter icon on 'recipe' page, click and ensure twitter opens in new tab
+    8. Go to pinterest icon on 'recipe' page, click and ensure pinterest opens in new tab
+    9. Go to facebook icon on 'contact' page, click and ensure facebook opens in new tab
+    10. Go to instagram icon on 'contact' page, click and ensure instagram opens in new tab
+    11. Go to twitter icon on 'contact' page, click and ensure twitter opens in new tab
+    12. Go to pinterest icon on 'contact' page, click and ensure pinterest opens in new tab
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
 
@@ -127,4 +135,4 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for this project from The BBC Good Food website https://www.bbcgoodfood.com/
