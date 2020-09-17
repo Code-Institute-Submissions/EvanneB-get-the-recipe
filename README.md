@@ -25,6 +25,8 @@ The social media links at the bottom of each page will take the user directly to
 The contact form allows the user to send messages directly to myslef.
 
 ## The Skeletal Plane
+![mobile-wireframe](https://evanneb.github.io/get-the-recipe/assets/images/mobile-wireframe.png)
+![desktop-wireframe](https://evanneb.github.io/get-the-recipe/assets/images/desktop-wireframe.png)
 
 ## The Surface Place
 The website will host a range of images of food to tempt uses and encourage them to bake. The recipes will display an image with a brief description of the recipe including ingredients used and calories and there will be a 'see recipe' button below when if clicked will take the user directly to the recipe.
@@ -106,7 +108,21 @@ I used the following technologies in this project:
     10. Go to instagram icon on 'contact' page, click and ensure instagram opens in new tab
     11. Go to twitter icon on 'contact' page, click and ensure twitter opens in new tab
     12. Go to pinterest icon on 'contact' page, click and ensure pinterest opens in new tab
+ 
+ 5. HTML validation
 
+I ran the html pages through a html5 validator.
+
+Index.html
+![HTML-validation](https://evanneb.github.io/get-the-recipe/assets/images/index.html-validation.png)
+Recipe.html 
+![HTML-validation](https://evanneb.github.io/get-the-recipe/assets/images/recipe.html-validation.png)
+Contact.html
+![HTML-validation](https://evanneb.github.io/get-the-recipe/assets/images/contact.html-validation.png)
+
+ 6. CSS Validation
+  I ran the the CSS stylesheet through the CSS validator. 
+![CSS-validation](https://evanneb.github.io/get-the-recipe/assets/images/style.css-validation.png)
 
 ## Deployment
 
