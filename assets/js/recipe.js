@@ -8,14 +8,13 @@ searchBtn.addEventListener("click", () => {
 
 const appId = '187461a3';
 const apiKey = '40fec7274b46ff61bd3cfad60ed50534';
-​
 async function enquireTheRecipeAPI() {
     let entered_search = document.querySelector("#search_recipes").value;
     let response = await fetch(`https://api.edamam.com/search?app_id=${appId}&app_key=${apiKey}&q=${entered_search}`)
         .then(response => response.json())
         .then(data => {
             getTheRecipeDetails(data);
-        })
+        });
 }
 
 function getTheRecipeDetails(data) {
@@ -37,7 +36,7 @@ function getTheRecipeDetails(data) {
         </div>
         <hr />
     </div>
-        `
+        `;
     }
-​
+
 }

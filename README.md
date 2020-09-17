@@ -118,6 +118,10 @@ Contact.html
   I ran the the CSS stylesheet through the CSS validator. 
 ![CSS-validation](https://evanneb.github.io/get-the-recipe/assets/images/style.css-validation.png)
 
+7. Javascript Validation
+I ran recipe.js through JSHint.
+![Javascript-validation](https://evanneb.github.io/get-the-recipe/assets/images/js-validation.png)
+
 ## Deployment
 
 - I started creating this website in a local git. I used 'git init' to create a new repository.
