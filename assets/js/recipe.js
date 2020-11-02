@@ -13,11 +13,15 @@ async function enquireTheRecipeAPI() {
     let response = await fetch(`https://api.edamam.com/search?app_id=${appId}&app_key=${apiKey}&q=${entered_search}`)
         .then(response => response.json())
         .then(data => {
-            getTheRecipeDetails(data);
+            enquireTheRecipeAPi(data);
         });
+
+    function enquireTheRecipeAPi(data) {
+        getTheRecipeDetails(data);
+    }
 }
 
-function getTheRecipeDetails(data) {
+function enquireTheRecipeAPi(data) {
     recipes.innerHTML = "";
     for (let counter = 0; counter < 12; counter++) {
         recipes.innerHTML += `
