@@ -14,17 +14,16 @@ async function enquireTheRecipeAPI() {
         alert("You can't leave the search term empty!");
         return;
     }
-    try {
+   
         let response = await fetch(`https://api.edamam.com/search?app_id=${appId}&app_key=${apiKey}&q=${entered_search}`)
             .then(response => response.json())
             .then(data => {
                 getTheRecipeDetails(data);
             });
-    }
-    catch (err) {
+    
         alert("A relevant search term must be filled out, I can't find any recipes with that search term!")
     }
-}
+
 
 function enquireTheRecipeAPi(data) {
     recipes.innerHTML = "";
