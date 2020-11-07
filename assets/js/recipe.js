@@ -1,11 +1,9 @@
 const searchBtn = document.querySelector("#searchBtn");
 const recipes = document.querySelector("#content");
 const search = document.querySelector("#search_recipes");
-
 searchBtn.addEventListener("click", () => {
     enquireTheRecipeAPI();
 });
-
 const appId = '187461a3';
 const apiKey = '40fec7274b46ff61bd3cfad60ed50534';
 async function enquireTheRecipeAPI() {
@@ -14,18 +12,18 @@ async function enquireTheRecipeAPI() {
         alert("You can't leave the search term empty!");
         return;
     }
-   
-        let response = await fetch(`https://api.edamam.com/search?app_id=${appId}&app_key=${apiKey}&q=${entered_search}`)
-            .then(response => response.json())
-            .then(data => {
-                getTheRecipeDetails(data);
-            });
-    
-        alert("A relevant search term must be filled out, I can't find any recipes with that search term!")
+    let response = await fetch(`https://api.edamam.com/search?app_id=${appId}&app_key=${apiKey}&q=${entered_search}`)
+        .then(response => response.json())
+        .then(data => {
+            getTheRecipeDetails(data);
+        });
+}
+function getTheRecipeDetails(data) {
+    console.log("data: ", data);
+    if (data.count == 0) {
+        alert("A relevant search term must be filled out, I can't find any recipes with that search term!");
+        return;
     }
-
-
-function enquireTheRecipeAPi(data) {
     recipes.innerHTML = "";
     for (let counter = 0; counter < 12; counter++) {
         recipes.innerHTML += `
@@ -46,5 +44,4 @@ function enquireTheRecipeAPi(data) {
     </div>
         `;
     }
-
 }
