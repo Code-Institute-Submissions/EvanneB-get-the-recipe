@@ -121,19 +121,19 @@ Contact.html
 7. Javascript Validation
 I ran recipe.js and sendEmail.js through JSHint.
 ![Javascript-validation](https://evanneb.github.io/get-the-recipe/assets/images/sendEmail.js-validation.png)
-(https://evanneb.github.io/get-the-recipe/assets/images/recipe.js-validation.png)
+(https://evanneb.github.io/get-the-recipe/assets/images/recipe.js-validation-update.png)
 
 8. User Testing
-- As a user I want to find a recipe suitable to my needs.
+- As a user I want to find a recipe suitable to my needs.  
 From the home page the user can use the navbar to access the recipe page where they will find the search function. The user can simply type the name of a dish or even just one single ingredient and they will access suitable recipes. 
 
-- As a user I want to be inspired to cook when I use this site.
+- As a user I want to be inspired to cook when I use this site.  
 The home page provides four inspiring recipes for the user to enjoy. 
 
-- As a user I want to explore the social media content of this website.
+- As a user I want to explore the social media content of this website.  
 Each page provides links to Facebook, Twitter, Instagram and Pinterest.
 
-- As a user I want to comment on a recipe I have found or ask a questions
+- As a user I want to comment on a recipe I have found or ask a questions.  
 The user can get in touch via the contact form provided on the contact page which can be accessed though the navbar. 
 Here the user can ask directly and questions or comments they have provided they fill in the forms requirements. 
 
