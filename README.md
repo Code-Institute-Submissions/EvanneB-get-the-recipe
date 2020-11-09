@@ -121,7 +121,7 @@ Contact.html
 7. Javascript Validation
 I ran recipe.js and sendEmail.js through JSHint.
 ![Javascript-validation](https://evanneb.github.io/get-the-recipe/assets/images/sendEmail.js-validation.png)
-(https://evanneb.github.io/get-the-recipe/assets/images/recipe.js-validation-update.png)
+![Javascript-validation](https://evanneb.github.io/get-the-recipe/assets/images/recipe.js-validation-update.png)
 
 8. User Testing
 - As a user I want to find a recipe suitable to my needs.  
